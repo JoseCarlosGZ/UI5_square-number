@@ -1,0 +1,24 @@
+<mvc:View 
+    controllerName="square.controller.App"
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns="sap.m"
+    displayBlock="true"
+>
+
+<!-- OJO ME QUEDA PENDIENTE COLOREAR EL TEXTO DEL BOTÓN CO UNA CLASE CSS -->
+
+    <App id="app">
+        <pages>
+            <Page id="page" title="{i18n>title}">
+
+                <content>
+                    <VBox>
+                        <Input placeholder="Enter a number" id="inputSquare" width="8rem" class="sapUiMediumMargin" showClearIcon="true"/>
+                        <Button text="X&#178;" width="40px" press="onPressSquareNumber" class="sapUiMediumMarginBegin" />   
+                    </VBox>
+                </content>
+
+            </Page>
+        </pages>
+    </App>
+</mvc:View>
